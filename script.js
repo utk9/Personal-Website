@@ -43,15 +43,20 @@ var main = function(){
 	var interval = window.setInterval(function() {
 		if (collision($keyHoleContainer, $keyContainer)){
 			$button.removeClass('disabled');
+			$button.removeAttr('disabled');
+
+			//$button.show(2000);
 		}
 		else {
 			$button.addClass('disabled');
+			$button.attr('disabled', 'disabled');
+
 		}
 	}, 200);
 
 
 	$('.unlock-button').click(function(){
-		if (!$('.unlock-button').hasClass('disabled')){
+		//if (!$('.unlock-button').hasClass('disabled')){
 			clearInterval(interval);
 			$(this).slideUp(200);
 			$('.key-container').slideUp(200);
@@ -69,7 +74,7 @@ var main = function(){
 				});
 
 			});
-		}
+		//}
 		
 	});
 
