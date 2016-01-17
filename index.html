@@ -11,102 +11,118 @@
 </head>
 <body>
 
-	<div class="wall-left"></div>
-	<div class="wall-right"></div>
-
-	<div class="center-line"></div>
-
-	
-	<div class="key-container  ui-widget-content">
-		<!--<p style="color: white">draggable</p>-->
-		<img src="img/custom_key.png"/>
-	</div>
-
-
-
-	<div class="key-hole-container">
-		<!--<p style="color: white">draggable</p>-->
-		<img src="img/key_hole.png"/>
-	</div>
-
-	<div id="background"></div>
-
-	<button type="button" class="btn btn-primary unlock-button disabled" disabled="disabled"><strong>UNLOCK</strong></button>
-
-
-
 
 	<div class="nav-bar">
 		<ul class="pull-left">
-			<li><a href="#" id = "a">About</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="#">Contact</a></li>
+			
+			<li><a id="about_link">About</a></li>
+			<li><a id="portfolio_link">Portfolio</a></li>
+			<li><a id="contact_link">Contact</a></li>
+
 		</ul>
 
 		<ul class="pull-right">
 			<li><a href="https://github.com/utk9" target="_blank">Github</a></li>
 			<li><a href="#">Resume</a></li>
 		</ul>
+
+
 	</div>
 
 	<div class="jumbotron">
-		<div class="row">
-			<div class="col-xs-2"></div>
-			<div class="col-xs-2" style="border: 1px dashed black">
-				<img src="http://3.bp.blogspot.com/_JBHfzEovWs8/S8X3wH9vbTI/AAAAAAAAAPM/O8r2xpeeur0/s1600/batman-for-facebook.jpg"/>
-			</div>
-			<div class="col-xs-6" style="border: 1px dashed black">
+
+
+		<div class="row" id="image_row">
+			<div class="col-xs-3"></div>
+			<div class="col-xs-6" id="jumbotron_image">
+			
+				<img src="img/me.png"/>
+
 				<h1>Utkarsh Lamba</h1>
 				<p>1B Software Engineering student at University of Waterloo. Love mobile technology, have been (learning and) doing Android and iOS dev in free time. Recently starting to get into web dev!
-				</div>
+				</p>
+			
 			</div>
-		</div>
-
-		<div class="portfolio-container">
-			<div class="row">
-				<div class="col-md-4" style="background-color: #0033cc">
-				</div>
-				<div class="col-md-4" style="background-color: #5c00e6">
-					<h4>website site under construction</h4>
-				</div>
-				<div class="col-md-4" style="background-color: #0033cc">
-
-				</div>
-
 			</div>
-
-		</div>
-
-
-
-
-		<div class="footer">
-			<div id="footer-icon">
-				<a href="#">
-					<span class="glyphicon glyphicon-envelope"></span>
-				</a>
-			</div>
-
-			<div id="footer-email">
-				<a href="#">
-					ulamba@uwaterloo.ca
-				</a>
-			</div>
-
-		</div>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script>if (typeof jQuery === 'undefined') {
-		document.write(unescape('%3Cscript%20src%3D%22jquery-2.1.4.js%22%3E%3C/script%3E'));
-	}
+		
+
+		<div class="portfolio-container">
+
+			<div class="row">
+				<div class="col-xs-4">
+					<h2>Portfolio</h2>
+					</div>
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-6">
+						<div class="image" id="safe-pass">
+							<div class="description"><p>Lorem Ipsum</p></div>
+						</div>
+						<h4>Safe Pass</h4>
+					</div>
 
 
-	</script>
-	<script src="jquery-ui.min.js"></script>
+					<div class="col-md-6">
+						<div class="image" id="quick-convert">
+							<div class="description"><p>Lorem Ipsum</p></div>
+						</div>
+						<h4>Quick Convert</h4>
+					</div>
+					
 
-	<script src="script.js"></script>
+					</div>
+
+					<div class="row">
+
+					<div class="col-md-6">
+						<div class="image" id="muriqui">
+							<div class="description"><p>Lorem Ipsum</p></div>
+						</div>
+						<h4>Muriqui</h4>
+					</div>
 
 
-</body>
-</html>
+					<div class="col-md-6">
+						<div class="image" id="unlocker">
+							<a href="unlocker.html"><div class="description"><p>Lorem Ipsum</p></div>
+						</div></a>
+						<h4>Unlocker</h4>
+					</div>
+				</div>
+
+				</div>
+
+				
+
+			</div>
+
+
+
+
+			<div class="footer">
+				<div id="footer-icon">
+					<a href="mailto:ulamba@uwaterloo.ca">
+						<span class="glyphicon glyphicon-envelope"></span>
+
+					</a>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>if (typeof jQuery === 'undefined') {
+			document.write(unescape('%3Cscript%20src%3D%22jquery-2.1.4.js%22%3E%3C/script%3E'));
+		}
+
+
+		</script>
+		<script src="jquery-ui.min.js"></script>
+
+		<script src="script.js"></script>
+
+
+	</body>
+	</html>

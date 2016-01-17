@@ -16,72 +16,50 @@ var collision = function($div1, $div2) {
 	return true;
 }
 
+var my = function(){
+	alert("clicked");
+}
+
 
 
 var main = function(){
 
-	var fromTop = Math.floor(Math.random()* 230 ).toString();
-	var fromLeft = Math.floor(Math.random()* ($('body').width()-130)).toString();
-	$('.key-container').css({'top': fromTop+'px'});
-	$('.key-container').css({'left': fromLeft+'px'});
 
-	fromLeft = ($('body').width()/2);
+	var imgFromTop = ($('body').height()/2) - ($(".jumbotron img").height());
+	$("#image_row").css('top', imgFromTop+'px');
 
-	$('.center-line').css({'left': fromLeft + 'px'});
+	$(window).scroll(function(){
+		var st;
+    //if ($(this).scrollTop()/10 )
+    st = $(this).scrollTop()/1000;
+    if (st<=0.8){
+    	$(".nav-bar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
+    }
 
-	fromLeft-=50;
+});
 
-	$('.key-hole-container').css({'left': fromLeft+'px'});
+	$('#portfolio_link').click(function(){
+		$('html,body').animate({
+			scrollTop: $(".portfolio-container").offset().top},
+			'slow');
+    });
 
-	$('.unlock-button').css({'left': fromLeft+'px'});
-	$('#background').css({'left': fromLeft+'px'});
+    $('#about_link').click(function(){
+		$('html,body').animate({
+			scrollTop: 0},
+			'slow');
+    });
 
-
-	var $keyHoleContainer = $('.key-hole-container');
-	var $keyContainer = $('.key-container');
-	var $button = $('.unlock-button');
-	var interval = window.setInterval(function() {
-		if (collision($keyHoleContainer, $keyContainer)){
-			$button.removeClass('disabled');
-			$button.removeAttr('disabled');
-
-			//$button.show(2000);
-		}
-		else {
-			$button.addClass('disabled');
-			$button.attr('disabled', 'disabled');
-
-		}
-	}, 200);
+    $('#contact_link').click(function(){
+		$('html,body').animate({
+			scrollTop: document.body.scrollHeight},
+			'slow');
+    });
 
 
-	$('.unlock-button').click(function(){
-		//if (!$('.unlock-button').hasClass('disabled')){
-			clearInterval(interval);
-			$(this).slideUp(200);
-			$('.key-container').slideUp(200);
-			$('.key-hole-container').slideUp(200, function(){
-
-				$('.center-line').fadeOut(200);
-				$('#background').fadeOut(10);
-
-				$('.wall-left').animate({width: 0}, 1500, function(){
-					$('.wall-left').css('display', 'none');
-				});
-				var width = $('.wall-right').width()*-1;
-				$('.wall-right').animate({right: width}, 1500, function(){
-					$('.wall-right').css('display', 'none');
-				});
-
-			});
-		//}
-		
-	});
-
-	$('.key-container').draggable();
 
 
-}
+};
 
 
 

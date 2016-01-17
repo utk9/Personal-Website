@@ -1,33 +1,104 @@
-body{
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+html, body{
 	width: 100%;
+	height: 100%;
 }
 
 .nav-bar{
-	border-bottom: 2px solid black;
-	padding-top: 20px;
-	padding-bottom: 40px;
-	padding-right: 20px;
+	width: 100%;
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 35px;
+	padding-right: 25px;
+	position: fixed;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0);
 
 }
+
+.nav-bar li a{
+	color: white;
+	font-family: 'Lato', "Trebuchet MS", "Verdana";
+	font-weight: 200;
+}
+
+.jumbotron img{
+	height: 250px;
+	width: 250px;
+	border: 2px solid white;
+	border-radius: 100%;
+	display: block;
+	margin: auto;
+	
+}
+
+.portfolio-container a{
+	text-decoration: none;
+}
+
+h1, p{
+	display: block;
+	text-align: center;
+}
+
+h2{
+	font-family: 'Lato';
+	font-size: 50px;
+}
+
+
+
+
+
+#image_row{
+	display: block;
+	position: relative;
+}
+
+.row{
+	position: relative;
+}
+
 li{
 	margin-right: 20px;
-	padding-bottom: 5px;
-	border: 1px dashed black;
 }
 
-a:hover{
+.nav-bar a:hover{
 	text-decoration: none;
-	color: black;
-	border-bottom: 3px solid black;
+	border-bottom: 2px solid white;
+	cursor: pointer;
+}
+
+.nav-bar a:active, a:visited{
+	text-decoration: none;
 }
 
 .jumbotron{
-	height: 350px;
+	height: 100%;
+	margin-bottom: 0px;
+	background-color: #542B88;
 }
+
+.jumbotron h1, p{
+	color: #FEFEFF;
+	font-family: "Lato";
+}
+
+.jumbotron h1{
+	font-size: 75px;
+	font-weight: 300;
+}
+
+.jumbotron p{
+	color: #FEFEFF;
+	font-family: "Lato";
+}
+
 
 .footer{
 	border-top: 1px solid black;
-	background-color: white;
+	background-color: #542B88;
 	height: 40px;
 	clear: both;
 }
@@ -38,33 +109,28 @@ a:hover{
 	margin: 0 auto;
 }
 
-
-#footer-email{
-	width: 140px;
-	float: none;
-	margin: 0 auto;
-}
-
-
-.jumbotron img{
-	height: 200px;
-	width: 200px;
-	border-radius: 100%;
-	border: 1px solid black;
-}
-
 .glyphicon.glyphicon-envelope{
 	font-size: 30px;
+	color: white;
 	padding-bottom: 0px; 
 	margin-bottom: 0px;
+}
+
+.glyphicon.glyphicon-envelope:hover{
+	color: black;
+}
+
+.portfolio-container{
+	margin: 0px;
 }
 
 .center-line{
 	position: fixed;
 	height: 100%;
-	width: 3px;
+	width: 2px;
 	z-index: 5;
 	background: black;
+	display: none;
 }
 
 .wall-left{
@@ -75,10 +141,10 @@ a:hover{
 	width: 50%;
 	background: #e6e6e6;
 	z-index: 5;
-	border-right: 50px solid #404040;
-	border-top: 40px solid #404040;
-	border-bottom: 40px solid #404040;
-	outline: 5px solid black;
+	border-right: 50px solid #333333;
+	border-top: 40px solid #333333;
+	border-bottom: 40px solid #333333;
+	outline: 1px solid black;
 }
 .wall-right{
 	position: fixed;
@@ -87,10 +153,10 @@ a:hover{
 	width: 50%;
 	background: #e6e6e6;
 	z-index: 5;
-	border-left: 50px solid #404040;
-	border-top: 40px solid #404040;
-	border-bottom: 40px solid #404040;
-	outline: 5px solid black;
+	border-left: 50px solid #333333;
+	border-top: 40px solid #333333;
+	border-bottom: 40px solid #333333;
+	outline: 1px solid black;
 
 }
 
@@ -111,6 +177,9 @@ a:hover{
 	z-index: 6;
 	position: fixed;
 	top: 270px;
+	width: 100px;
+	margin: 0 auto;
+	display: none;
 }
 
 .key-hole-container img{
@@ -127,7 +196,7 @@ a:hover{
 	border-radius: 0px;
 	font-size: 16px;
 	font-family: "Arial Black", "Verdana";
-	/*display:none;*/
+	display:none;
 }
 
 #background{
@@ -137,11 +206,72 @@ a:hover{
 	height: 50px;
 	width: 100px;
 	background-color: black;
+	display: none;
+}
+
+.image{
+	width: 480px;
+	height: 270px;
+	display: block;
+	cursor: pointer;
+	margin: 0 auto;
+}
+
+#quick-convert{
+	background: url(img/quick_convert.png);
+	background-size: 480px 270px;
+}
+#safe-pass{
+	background: url(img/safe_pass.png);
+	background-size: 480px 270px;
+}
+
+#muriqui{
+	background: url(img/muriqui.png);
+	background-size: 480px 270px;
+}
+
+#unlocker{
+	background: url(img/unlocker.png);
+	background-size: 480px 270px;
 
 }
 
+.image:hover .description{
+	display: block;
+}
+
+.description{
+	background-color: black;
+	height: 270px;
+	width: 480px;
+	margin: 0 auto;
+    opacity: 0.75;
+    display: none;
+}
+
+
+
+.portfolio-container .row{
+	padding: 30px 30px 30px 30px;
+	background: #F6F6F6;
+}
+
+.description p{
+	font-family: 'Lato', "Trebuchet MS", "Verdana";
+}
+
+
+
+h4{
+	font-family: 'Lato', "Trebuchet MS", "Verdana";
+	font-weight: 400;
+	text-align: center;
+	display: block;
+}
+
 li {
-	font-family: "Ludica Grande", "Trebuchet MS", "Verdana";
+	font-family: "Lato", "Trebuchet MS", "Verdana";
 	display: inline;
 	font-size: 18px;
 
