@@ -10,17 +10,23 @@ html, body{
 	height: 40px;
 	padding-top: 10px;
 	padding-bottom: 35px;
-	padding-right: 25px;
 	position: fixed;
 	z-index: 2;
+	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0);
 
 }
 
+.pull-right{
+	margin-right: 20px;
+}
+
+
+
 .nav-bar li a{
 	color: white;
 	font-family: 'Lato', "Trebuchet MS", "Verdana";
-	font-weight: 200;
+	font-weight: 300;
 }
 
 .jumbotron img{
@@ -76,7 +82,8 @@ li{
 
 .jumbotron{
 	height: 100%;
-	margin-bottom: 0px;
+	width: 100%;
+	margin: 0px;
 	background-color: #542B88;
 }
 
@@ -130,82 +137,6 @@ li{
 	width: 2px;
 	z-index: 5;
 	background: black;
-	display: none;
-}
-
-.wall-left{
-	position: fixed;
-	/*left: 0px;
-	top: 0px;*/
-	height: 100%;
-	width: 50%;
-	background: #e6e6e6;
-	z-index: 5;
-	border-right: 50px solid #333333;
-	border-top: 40px solid #333333;
-	border-bottom: 40px solid #333333;
-	outline: 1px solid black;
-}
-.wall-right{
-	position: fixed;
-	right: 0px;
-	height: 100%;
-	width: 50%;
-	background: #e6e6e6;
-	z-index: 5;
-	border-left: 50px solid #333333;
-	border-top: 40px solid #333333;
-	border-bottom: 40px solid #333333;
-	outline: 1px solid black;
-
-}
-
-.key-container img{
-	height: 100px;
-	width: 130px;
-
-}
-
-.key-container{
-	z-index: 7;
-	top: 100px;
-	position: fixed;
-	cursor: pointer;
-}
-
-.key-hole-container{
-	z-index: 6;
-	position: fixed;
-	top: 270px;
-	width: 100px;
-	margin: 0 auto;
-	display: none;
-}
-
-.key-hole-container img{
-	height: 130px;
-	width: 100px;
-}
-
-.unlock-button{
-	position: fixed;
-	top: 400px;
-	z-index: 6;
-	height: 50px;
-	width: 100px;
-	border-radius: 0px;
-	font-size: 16px;
-	font-family: "Arial Black", "Verdana";
-	display:none;
-}
-
-#background{
-	position: fixed;
-	top: 400px;
-	z-index: 6;
-	height: 50px;
-	width: 100px;
-	background-color: black;
 	display: none;
 }
 
