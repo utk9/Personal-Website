@@ -51,11 +51,8 @@ h1, p{
 h2{
 	font-family: 'Lato';
 	font-size: 50px;
+	text-align: center;
 }
-
-
-
-
 
 #image_row{
 	display: block;
@@ -64,6 +61,26 @@ h2{
 
 .row{
 	position: relative;
+}
+
+.about p{
+	color: white;
+	font-size: 20px;
+}
+
+.about h2{
+	color: white;
+}
+
+.about a{
+	text-decoration: none;
+}
+
+.about{
+	padding-top: 30px;
+	padding-bottom: 50px;
+	background-color: #191919;
+	overflow: hidden;
 }
 
 li{
@@ -93,13 +110,8 @@ li{
 }
 
 .jumbotron h1{
-	font-size: 75px;
+	font-size: 90px;
 	font-weight: 300;
-}
-
-.jumbotron p{
-	color: #FEFEFF;
-	font-family: "Lato";
 }
 
 
@@ -111,7 +123,7 @@ li{
 }
 
 #footer-icon{
-	width: 30px;
+	width: 20px;
 	float: none;
 	margin: 0 auto;
 }
@@ -173,23 +185,41 @@ li{
 	background-size: 480px 270px;
 }
 
+#last_tx100{
+	background: url(img/final_tx100.png);
+	background-size: 480px 270px;
+}
+
+
 #priorify{
 	background: url(img/priorify.png);
 	background-size: 480px 270px;
 }
 
+#offline_bling{
+	background: url(img/offline_bling.png);
+	background-size: 480px 270px;
+}
+
 .image:hover .description{
-	display: block;
+	display:table;
+	
+}
+
+.description-text{
+	vertical-align: middle;
+	display:table-cell;
 }
 
 .description{
 	background-color: black;
 	height: 270px;
 	width: 480px;
-	margin: 0 auto;
+	
     opacity: 0.75;
     display: none;
     padding: 25px;
+    text-align: center;
 }
 
 

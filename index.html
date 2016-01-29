@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html>
@@ -34,48 +35,67 @@
 
 	<div class="jumbotron">
 
-
+<div class="container-fluid">
 		<div class="row" id="image_row">
-			<div class="col-xs-3"></div>
-			<div class="col-xs-6" id="jumbotron_image">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8" id="jumbotron_image">
 
 				<img src="img/me.png"/>
 
 				<h1>Utkarsh Lamba</h1>
-				<p>Software Engineering student at University of Waterloo. Love mobile technology, have been doing mobile dev in free time. Recently starting to get into web dev!
+				<br><br>
+				<p>Software Developer | University of Waterloo
 				</p>
 
 			</div>
 		</div>
 	</div>
+	</div>
+
+
+	<div class="about container-fliud">
+		<div class="row">
+			<h2>About</h2>
+			<br><br>
+		</div>
+		<div class="row">
+			<div class="col-xs-2">
+			</div>
+			<div class="col-xs-8">
+			<p>Hi, I'm Utkarsh. Thanks for stopping by.</p>
+			<p>I am a Software Engineering student at University of Waterloo. I love to develop software and have been coding for 5 years now. I am a versatile programmer and have developed for various platorms inclusing Android, iOS, web and PC. Check out my portfolio and github for some of the projects I have worked on!</p>
+			<p>I like sports, or rather any active activity in general. People don't usually believe me when I brag about how I once biked from <a target="_blank" href="https://goo.gl/maps/H4WhdCR2gcQ2">Colonel Sam Smith Park to the Mattamy Athletic Centre</a> in 38 mins!
+			</p>
+		</div>
+		</div>
+	</div>
+	</div>
 
 
 
 	<div class="portfolio-container">
-
+<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-4">
 				<h2>Portfolio</h2>
-			</div>
 		</div>
 
 		<div class="row">
 
 			<div class="col-md-6">
-				<div class="image" id="safe-pass">
-					<a href="https://github.com/utk9/SafePass" target="_blank"><div class="description"><p>Android app with simple and intuitive UI to store passwrords. Wrote a 5 tier key based encryption algorithm from stratch to keep the data secure in an sqLite database.</p></div></a>
+				<div class="image" id="offline_bling">
+					<a href="https://github.com/utk9/OfflineBling" target="_blank"><div class="description"><p class="description-text">Android app to provide services that normally require an internet connection without any use of data or Wifi! Created a live community Q/A forum and special features for Wikipidia and WolframAlpha search, all compatible with offline mode. Used the Twilio, Wolfram|Alpha and MediaWiki APIs. Implemented Meterial design.</p></div></a>
 				</div>
-				<h4>Safe Pass</h4>
+				<h4>OfflineBling</h4>
 			</div>
+
 
 
 			<div class="col-md-6">
-				<div class="image" id="quick-convert">
-					<a href="https://github.com/utk9/QuickConvert" target="_blank"><div class="description"><p>Wrote this quick iOS currency converter during SE Hack Day 2015 (UI is currently very crude!). Learnt and implemented JSON parsing using native Swift libraries.</p></div></a>
+				<div class="image" id="safe-pass">
+					<a href="https://github.com/utk9/SafePass" target="_blank"><div class="description"><p class="description-text">Android app with simple and intuitive UI to store passwrords. Wrote a 5 tier key based encryption algorithm from stratch to keep the data secure in an sqLite database.</p></div></a>
 				</div>
-				<h4>Quick Convert</h4>
+				<h4>Safe Pass</h4>
 			</div>
-
 
 		</div>
 
@@ -83,14 +103,14 @@
 
 			<div class="col-md-6">
 				<div class="image" id="muriqui">
-					<a href="http://muriqui.xyz/users/sign_in" target="_blank"><div class="description"><p>Built front end of a rails app that is currently in use for crowd unit testing for CS assignments.</p></div></a>
+					<a href="http://muriqui.xyz/users/sign_in" target="_blank"><div class="description"><p class="description-text">Built front end of a rails app that is currently in use for crowd unit testing for CS assignments.</p></div></a>
 				</div>
 				<h4>Muriqui</h4>
 			</div>
 
 			<div class="col-md-6">
 				<div class="image" id="unlocker">
-					<a href="unlocker.html" target="_blank"><div class="description"><p>Wrote a fun vault unlocking simulator when I was learning Javascript. Used jQuery and jQueryUI.</p></div></a>
+					<a href="unlocker.html" target="_blank"><div class="description"><p class="description-text">Wrote a fun vault unlocking simulator when I was learning Javascript. Used jQuery and jQueryUI.</p></div></a>
 				</div>
 				<h4>Unlocker</h4>
 			</div>
@@ -101,7 +121,7 @@
 
 			<div class="col-md-6">
 				<div class="image" id="phantom-vib">
-					<a href="https://github.com/utk9/PhantomVi" target="_blank"><div class="description"><p>Created this 'terrible' app during TerribleHack 2015. It is a phantom notification generator meant to spook the owner of the phone. Worked with Android Services, Notifications and BroadcastReceivers. NOTE: This app is supposed to be bad (we like to call it 'terrible'!) and the UI is intentionally unpleasing and hard to navigate through.</p></div></a>
+					<a href="https://github.com/utk9/PhantomVi" target="_blank"><div class="description"><p class="description-text">Created this 'terrible' app during TerribleHack 2015. It is a phantom notification generator meant to spook the owner of the phone. Worked with Android Services, Notifications and BroadcastReceivers. NOTE: This app is supposed to be bad (we like to call it 'terrible'!) and the UI is intentionally unpleasing and hard to navigate through.</p></div></a>
 				</div>
 				<h4>PhantomVib</h4>
 			</div>
@@ -109,13 +129,34 @@
 
 			<div class="col-md-6">
 				<div class="image" id="priorify">
-					<a href="https://github.com/utk9/Priorify-Android" target="_blank"><div class="description"><p>Led a team of 3 during EngHack 2015 to create this app to determine priority of user's tasks. Successfully pitched to judges resultin in being selected for Top 10 hacks.</p></div></a>
+					<a href="https://github.com/utk9/Priorify-Android" target="_blank"><div class="description"><p class="description-text">Led a team of 3 during EngHack 2015 to create this app to determine priority of user's tasks. Successfully pitched to judges resultin in being selected for Top 10 hacks.</p></div></a>
 				</div>
 				<h4>Priorify</h4>
 			</div>
 
 
 		</div>
+
+		<div class="row">
+
+			<div class="col-md-6">
+				<div class="image" id="last_tx100">
+					<a href="https://github.com/utk9/LastTX100" target="_blank"><div class="description"><p class="description-text">Java game designed to teach players World Geography. In-gameplay multi-tasking and content testing integration.</p></div></a>
+				</div>
+				<h4>LastTX100</h4>
+			</div>
+
+			<div class="col-md-6">
+				<div class="image" id="quick-convert">
+					<a href="https://github.com/utk9/QuickConvert" target="_blank"><div class="description"><p class="description-text">Wrote this quick iOS currency converter during SE Hack Day 2015 (UI is currently very crude!). Learnt and implemented JSON parsing using native Swift libraries.</p></div></a>
+				</div>
+				<h4>Quick Convert</h4>
+			</div>
+			
+		</div>
+
+
+	</div>
 
 	</div>
 

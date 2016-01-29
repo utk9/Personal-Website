@@ -25,12 +25,15 @@ var my = function(){
 var main = function(){
 
 
+
 	var imgFromTop = ($('body').height()/2) - ($(".jumbotron img").height());
 	$("#image_row").css('top', imgFromTop+'px');
 
+	var st = $(this).scrollTop()/1000;
+	if (st>0.8) st = 0.8;
+	$(".nav-bar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
+
 	$(window).scroll(function(){
-		var st;
-    //if ($(this).scrollTop()/10 )
     st = $(this).scrollTop()/1000;
     if (st<=0.8){
     	$(".nav-bar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
@@ -46,7 +49,7 @@ var main = function(){
 
     $('#about_link').click(function(){
 		$('html,body').animate({
-			scrollTop: 0},
+			scrollTop: $(".about").offset().top},
 			'slow');
     });
 
