@@ -55,7 +55,7 @@ var main = function(){
 
     $('#contact_link').click(function(){
 		$('html,body').animate({
-			scrollTop: document.body.scrollHeight},
+			scrollTop: $(".footer").offset().top},
 			'slow');
     });
 
