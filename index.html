@@ -1,195 +1,600 @@
-
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
 <head>
-	<link type="text/css" rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<!--
-	<link type="text/css" rel = "stylesheet" href="bootstrap.min.css"/>-->
-	<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-	<link rel="shortcut icon" href="img/page_icon.png">
+	<meta charset="utf-8">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
 	<title>Utkarsh Lamba</title>
 
-</head>
-<body>
+	<link rel="shortcut icon" href="img/page_icon.ico">
 
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700,300,900' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 
-	<div class="nav-bar">
-		
-		<ul class="pull-left">
-			
-			<li><a id="about_link">About</a></li>
-			<li><a id="portfolio_link">Portfolio</a></li>
-			<li><a id="contact_link">Contact</a></li>
-
-		</ul>
-
-		<ul class="pull-right">
-			<li><a href="https://github.com/utk9" target="_blank">Github</a></li>
-			<li><a href="resume.pdf" target="_blank">Resume</a></li>
-		</ul>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel = "stylesheet">
 
 
 
-	</div>
-
-	<div class="jumbotron">
-
-<div class="container-fluid">
-		<div class="row" id="image_row">
-			<div class="col-xs-2"></div>
-			<div class="col-xs-8" id="jumbotron_image">
-
-				<img src="img/me.png"/>
-
-				<h1>Utkarsh Lamba</h1>
-				<br><br>
-				<p>Software Developer | University of Waterloo
-				</p>
-
-			</div>
-		</div>
-	</div>
-	</div>
-
-
-	<div class="about container-fliud">
-		<div class="row">
-			<h2>About</h2>
-			<br><br>
-		</div>
-		<div class="row">
-			<div class="col-xs-2">
-			</div>
-			<div class="col-xs-8">
-			<p>Hi, I'm Utkarsh. Thanks for stopping by.</p>
-			<p>I am a Software Engineering student at University of Waterloo. I love to develop software and have been coding for 5 years now. I am a versatile programmer and have developed for various platorms inclusing Android, iOS, web and PC. Check out my portfolio and github for some of the projects I have worked on!</p>
-			<p>I like sports, or rather any active activity in general. People don't usually believe me when I brag about how I once biked from <a target="_blank" href="https://goo.gl/maps/H4WhdCR2gcQ2">Colonel Sam Smith Park to the Mattamy Athletic Centre</a> in 38 mins!
-			</p>
-		</div>
-		</div>
-	</div>
-	</div>
-
-
-
-	<div class="portfolio-container">
-<div class="container-fluid">
-		<div class="row">
-				<h2>Portfolio</h2>
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-6">
-				<div class="image" id="offline_bling">
-					<a href="https://github.com/utk9/OfflineBling" target="_blank"><div class="description"><p class="description-text">Android app to provide services that normally require an internet connection without any use of data or Wifi! Created a live community Q/A forum and special features for Wikipidia and WolframAlpha search, all compatible with offline mode. Used the Twilio, Wolfram|Alpha and MediaWiki APIs. Implemented Meterial design.</p></div></a>
-				</div>
-				<h4>OfflineBling</h4>
-			</div>
-
-
-
-			<div class="col-md-6">
-				<div class="image" id="safe-pass">
-					<a href="https://github.com/utk9/SafePass" target="_blank"><div class="description"><p class="description-text">Android app with simple and intuitive UI to store passwrords. Wrote a 5 tier key based encryption algorithm from stratch to keep the data secure in an sqLite database.</p></div></a>
-				</div>
-				<h4>Safe Pass</h4>
-			</div>
-
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-6">
-				<div class="image" id="muriqui">
-					<a href="http://muriqui.xyz/users/sign_in" target="_blank"><div class="description"><p class="description-text">Built front end of a rails app that is currently in use for crowd unit testing for CS assignments.</p></div></a>
-				</div>
-				<h4>Muriqui</h4>
-			</div>
-
-			<div class="col-md-6">
-				<div class="image" id="unlocker">
-					<a href="unlocker.html" target="_blank"><div class="description"><p class="description-text">Wrote a fun vault unlocking simulator when I was learning Javascript. Used jQuery and jQueryUI.</p></div></a>
-				</div>
-				<h4>Unlocker</h4>
-			</div>
-
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-6">
-				<div class="image" id="phantom-vib">
-					<a href="https://github.com/utk9/PhantomVi" target="_blank"><div class="description"><p class="description-text">Created this 'terrible' app during TerribleHack 2015. It is a phantom notification generator meant to spook the owner of the phone. Worked with Android Services, Notifications and BroadcastReceivers. NOTE: This app is supposed to be bad (we like to call it 'terrible'!) and the UI is intentionally unpleasing and hard to navigate through.</p></div></a>
-				</div>
-				<h4>PhantomVib</h4>
-			</div>
-
-
-			<div class="col-md-6">
-				<div class="image" id="priorify">
-					<a href="https://github.com/utk9/Priorify-Android" target="_blank"><div class="description"><p class="description-text">Led a team of 3 during EngHack 2015 to create this app to determine priority of user's tasks. Successfully pitched to judges resultin in being selected for Top 10 hacks.</p></div></a>
-				</div>
-				<h4>Priorify</h4>
-			</div>
-
-
-		</div>
-
-		<div class="row">
-
-			<div class="col-md-6">
-				<div class="image" id="last_tx100">
-					<a href="https://github.com/utk9/LastTX100" target="_blank"><div class="description"><p class="description-text">Java game designed to teach players World Geography. In-gameplay multi-tasking and content testing integration.</p></div></a>
-				</div>
-				<h4>LastTX100</h4>
-			</div>
-
-			<div class="col-md-6">
-				<div class="image" id="quick-convert">
-					<a href="https://github.com/utk9/QuickConvert" target="_blank"><div class="description"><p class="description-text">Wrote this quick iOS currency converter during SE Hack Day 2015 (UI is currently very crude!). Learnt and implemented JSON parsing using native Swift libraries.</p></div></a>
-				</div>
-				<h4>Quick Convert</h4>
-			</div>
-			
-		</div>
-
-
-	</div>
-
-	</div>
-
-
-
-
-	<div class="footer container-fluid">
-		<div class="row">
-			<h2>Contact</h2>
-			<br><br>
-		</div>
-		<div class="row text-center">
-			<a href="mailto:ulamba@uwaterloo.ca">
-				<span class="glyphicon glyphicon-envelope"></span>
-				<p>ulamba@uwaterloo.ca</p>
-
-			</a>
-
-		</div>
-
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script>if (typeof jQuery === 'undefined') {
-		document.write(unescape('%3Cscript%20src%3D%22jquery-2.1.4.js%22%3E%3C/script%3E'));
-	}
-
-
-	</script>
-	<script src="jquery-ui.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
 	<script src="script.js"></script>
 
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id = "myNav">
+				<ul class="nav navbar-nav">
+					<li><a href='javascript:scrollToAbout()'>About</a></li>
+					<li><a href='javascript:scrollToPortfolio()'>Portfolio</a></li>
+					<li><a href='javascript:scrollToContact()'>Contact</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="https://github.com/utk9" target="_blank">Github</a></li>
+					<li><a href="resume.pdf" target="_blank">Resume</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="jumbotron">
+		<div class="container">
+			<br><br><br><br><br>
+			<img src="img/me.png" class="img-responsive img-center img-circle">
+			<h1 class = "jumbotron-text">Utkarsh Lamba</h1>
+			<h3 class = "jumbotron-text">Software Developer | University of Waterloo</h3>
+
+		</div>
+	</div>
+
+	<div class="about">
+		<div class="container">
+			<div class = "row">
+				<div class = "col-xs-1 col-md-1"></div>
+				<div class = "col-xs-10 col-md-10">
+					<h2 class = "about-text">About</h2><br><br>
+					<p class = "about-text">Hi, I'm Utkarsh. Thanks for stopping by.</p>
+					<p class = "about-text">I am a Software Engineering student at University of Waterloo. I love to develop software and have been coding for 5 years now. I am a versatile programmer and have developed for various platorms inclusing Android, iOS, web and PC. Check out my portfolio and github for some of the projects I have worked on!</p>
+					<p class = "about-text">I like sports, or rather any active activity in general. People don't usually believe me when I brag about how I once biked from <a target="_blank" href="https://goo.gl/maps/H4WhdCR2gcQ2">Colonel Sam Smith Park to the Mattamy Athletic Centre</a> in 38 mins!
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<div class="portfolio">
+		<div class="container">
+						<h2>Portfolio</h2><br><br>
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<h3>Offline Bling</h3>
+					<div class="project-container">
+						<div id="myCarousel1" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/OfflineBling" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><!--<br><br><br>-->
+									<p>Android app to provide services that normally require an internet connection without any use of data or Wifi! Created a live community Q/A forum and special features for Wikipidia and WolframAlpha search, all compatible with offline mode. Used the Twilio, Wolfram|Alpha and MediaWiki APIs. Implemented Meterial design.</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/offline_bling/ob1.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/offline_bling/ob2.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/offline_bling/ob3.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/offline_bling/ob4.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/offline_bling/ob5.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/offline_bling/ob6.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+
+					</div>
+
+					
+					
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<h3>Safe Pass</h3>
+					<div class="project-container">
+						<div id="myCarousel2" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/SafePass" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a>
+									<p>Android app with simple and intuitive UI to store passwrords. Wrote a 5 tier key based encryption algorithm from stratch to keep the data secure in an sqLite database.</p>
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/safe_pass/sp1.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/safe_pass/sp2.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/safe_pass/sp3.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/safe_pass/sp4.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+							</div>
+
+							<!-- Left and right controls -->
+							<div class = "controls-container">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+
+								<!--
+								<ol class="carousel-indicators">
+									
+									<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel2" data-slide-to="1"></li>
+									<li data-target="#myCarousel2" data-slide-to="2"></li>
+									<li data-target="#myCarousel2" data-slide-to="3"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<h3>Muriqui</h3>
+					<div class="project-container">
+						<div id="myCarousel3" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/AlstonLin/Muriqui" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><a href="http://muriqui.xyz/users/sign_in" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-globe fa-lg"></i>  Live</button></a><!--<br><br><br>-->
+									<p>Built front end of a rails app that is currently in use for crowd unit testing for CS assignments.</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/Muriqui/m1.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/Muriqui/m2.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/Muriqui/m3.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/Muriqui/m4.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/Muriqui/m5.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+
+				<div class="col-md-6 col-sm-6">
+					<h3>Unlocker</h3>
+					<div class="project-container">
+						<div id="myCarousel4" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/Unlocker" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><a href="unlocker.html" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-globe fa-lg"></i>  Live</button></a><!--<br><br><br>-->
+									<p>Wrote a fun vault unlocking simulator when I was learning Javascript. Used jQuery and jQueryUI.</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/unlocker/u1.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/unlocker/u2.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+
+				
+					
+					
+				</div>
+
+
+				<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<h3>Priorify</h3>
+					<div class="project-container">
+						<div id="myCarousel5" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/Priorify-Android" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><!--<br><br><br>-->
+									<p>Led a team of 3 during EngHack 2015 to create an Android app to determine priority of user's tasks. Successfully pitched to judges resultin in being selected for Top 10 hacks. (UI is currently quite rough.)</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/priorify/p1.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/priorify/p2.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/priorify/p3.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+										<img src="img/priorify/p4.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+
+				<div class="col-md-6 col-sm-6">
+					<h3>Phantom Vib</h3>
+					<div class="project-container">
+						<div id="myCarousel6" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/PhantomVi" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><!--<br><br><br>-->
+									<p>Created this 'terrible' app during TerribleHack 2015. It is a phantom notification generator meant to spook the owner of the phone. Worked with Android Services, Notifications and BroadcastReceivers. NOTE: This app is supposed to be bad (we like to call it 'terrible'!) and the UI is intentionally unpleasing and hard to navigate through.</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/phantom_vib/pv1.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/phantom_vib/pv2.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+
+				
+					
+					
+				</div>
+
+				<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<h3>Quick Convert</h3>
+					<div class="project-container">
+						<div id="myCarousel7" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/QuickConvert" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><!--<br><br><br>-->
+									<p>Wrote this quick iOS currency converter during SE Hack Day 2015 (UI is currently very crude!). Learnt and implemented JSON parsing using native Swift libraries.</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/quick_convert/qc1.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								<!--
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+
+							-->
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+
+				<div class="col-md-6 col-sm-6">
+					<h3>LastTX100</h3>
+					<div class="project-container">
+						<div id="myCarousel8" class="carousel slide" data-ride="carousel">	
+							<div class = "content-container">
+								<div class = "myOverlay">
+									<a href="https://github.com/utk9/LastTX100" target="_blank"><button type="button" class="btn btn-default btn-md"><i class="fa fa-github fa-lg"></i>  Github</button></a><!--<br><br><br>-->
+									<p>Java game designed to teach players World Geography. In-gameplay multi-tasking and content testing integration.</p>
+
+
+								</div>
+								<div class="carousel-inner" role="listbox">
+									<div class="item active">
+										<img src="img/last_TX100/lt1.png" class = "img-responsive"alt="Chania">
+									</div>
+									<div class="item">
+
+										<img src="img/last_TX100/lt2.png" class = "img-responsive"alt="Chania">
+									</div>
+
+									<div class="item">
+
+										<img src="img/last_TX100/lt3.png" class = "img-responsive"alt="Chania">
+									</div>
+
+
+
+									<div class="item">
+
+										<img src="img/last_TX100/lt2.png" class = "img-responsive"alt="Chania">
+									</div>
+								</div>
+
+							</div>
+
+							<!-- Left and right controls -->
+
+
+							<!-- Left and right controls -->
+
+
+
+
+							<div class = "controls-container">
+								
+								<span class="glyphicon glyphicon-chevron-left"></span>
+								<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+
+
+<!--
+								<ol class="carousel-indicators">
+									<li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+									<li data-target="#myCarousel1" data-slide-to="1"></li>
+									<li data-target="#myCarousel1" data-slide-to="2"></li>
+									<li data-target="#myCarousel1" data-slide-to="3"></li>
+									<li data-target="#myCarousel1" data-slide-to="4"></li>
+									<li data-target="#myCarousel1" data-slide-to="5"></li>
+								</ol>-->
+
+							</div>
+
+							
+
+						</div>
+					</div>
+					
+					
+				</div>
+
+				
+					
+					
+				</div>
+		</div>
+
+		</div>
+
+		<div class = "contact">
+			<div class="container">
+				<h2>Contact</h2>
+				<br><br>
+				<h3>Say Hello!</h3>
+				<div><a href="mailto:ulamba@uwaterloo.ca"><i class="fa fa-envelope fa-2x"></i></a><a href="resume.pdf"><i class="fa fa-file-text fa-2x"></i></a></div>
+				<br>
+				<p>© Utkarsh Lamba 2015-2016</p>
+			</div>
+
+		</div>
+	
 
 </body>
+
+
+
+
 </html>

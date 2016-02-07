@@ -1,72 +1,66 @@
-var collision = function($div1, $div2) {
-	var x1 = $div1.offset().left;
-	var y1 = $div1.offset().top;
-	var h1 = $div1.outerHeight(true);
-	var w1 = $div1.outerWidth(true);
-	var b1 = y1 + h1;
-	var r1 = x1 + w1;
-	var x2 = $div2.offset().left;
-	var y2 = $div2.offset().top;
-	var h2 = $div2.outerHeight(true);
-	var w2 = $div2.outerWidth(true);
-	var b2 = y2 + h2;
-	var r2 = x2 + w2;
-	
-	if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
-	return true;
+
+var scrollToAbout = function(){
+	$('html,body').animate({
+			scrollTop: $(".about").offset().top},
+			'slow');
 }
 
-var my = function(){
-	alert("clicked");
+var scrollToPortfolio = function(){
+	$('html,body').animate({
+			scrollTop: $(".portfolio").offset().top},
+			'slow');
 }
 
-
+var scrollToContact = function(){
+	$('html,body').animate({
+			scrollTop: $(".contact").offset().top},
+			'slow');
+}
 
 var main = function(){
 
+	var minHeight = $(".jumbotron h3").offset().top + $(".jumbotron h3").height() + 140;
 
-
-	var imgFromTop = ($('body').height()/2) - ($(".jumbotron img").height());
-	$("#image_row").css('top', imgFromTop+'px');
+	$(".jumbotron").css("min-height", minHeight);
 
 	var st = $(this).scrollTop()/1000;
-	if (st>0.8) st = 0.8;
-	$(".nav-bar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
+	if (st>0.85) st = 0.85;
+	$(".navbar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
 
 	$(window).scroll(function(){
-    st = $(this).scrollTop()/1000;
-    if (st<=0.8){
-    	$(".nav-bar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
-    }
+		st = $(this).scrollTop()/1000;
+		if (st<=0.85){
+			$(".navbar").css('background-color', 'rgba(0, 0, 0,' + st + ')');
+		}
+	});
+	
 
-});
+	$(".content-container").hover(function(){
+		$(this).find(".myOverlay").css("display", "block");
+	}, function(){
+		$(this).find(".myOverlay").css("display", "none");
+	});
 
-	$('#portfolio_link').click(function(){
-		$('html,body').animate({
-			scrollTop: $(".portfolio-container").offset().top},
-			'slow');
-    });
+	$(".glyphicon.glyphicon-chevron-left").click(function(){
+		var c = $(this).parent().parent();
+		c.carousel('prev');  
+	});
 
-    $('#about_link').click(function(){
-		$('html,body').animate({
-			scrollTop: $(".about").offset().top},
-			'slow');
-    });
+	$(".glyphicon.glyphicon-chevron-right").click(function(){
+		var c = $(this).parent().parent();
+		c.carousel('next');  
+	});
+/*
+	$("#myCarousel").swiperight(function() {  
+    		  $(this).carousel('prev');  
+    		  alert("swipe");
+	    		});  
+		   $("#myCarousel").swipeleft(function() {  
+		      $(this).carousel('next');  
+	   });
+*/
 
-    $('#contact_link').click(function(){
-		$('html,body').animate({
-			scrollTop: $(".footer").offset().top},
-			'slow');
-    });
 
 };
-
-
-
-
-
-
-
-
 
 $(document).ready(main);

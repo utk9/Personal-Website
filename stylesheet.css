@@ -1,257 +1,222 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:300);
-
 html, body{
 	width: 100%;
 	height: 100%;
-}
-
-.nav-bar{
-	width: 100%;
-	height: 40px;
-	padding-top: 10px;
-	padding-bottom: 35px;
-	position: fixed;
-	z-index: 2;
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0);
-
-}
-
-.pull-right{
-	margin-right: 20px;
-}
-
-
-
-.nav-bar li a{
-	color: white;
-	font-family: 'Lato', "Trebuchet MS", "Verdana";
-	font-weight: 300;
-}
-
-.jumbotron img{
-	height: 250px;
-	width: 250px;
-	border: 2px solid white;
-	border-radius: 100%;
-	display: block;
-	margin: auto;
-	
-}
-
-.portfolio-container a{
-	text-decoration: none;
-}
-
-h1, p{
-	display: block;
-	text-align: center;
-}
-
-h2{
-	font-family: 'Lato';
-	font-size: 50px;
-	text-align: center;
-}
-
-#image_row{
-	display: block;
-	position: relative;
+	font-family: "Open Sans", "Lato", sans-serif;
 }
 
 .row{
-	position: relative;
-}
-
-.about p{
-	color: white;
-	font-size: 20px;
-}
-
-.about h2{
-	color: white;
-}
-
-.about a{
-	text-decoration: none;
-}
-
-.about{
-	padding-top: 30px;
-	padding-bottom: 50px;
-	background-color: #191919;
-	overflow: hidden;
-}
-
-li{
-	margin-right: 20px;
-}
-
-.nav-bar a:hover{
-	text-decoration: none;
-	border-bottom: 2px solid white;
-	cursor: pointer;
-}
-
-.nav-bar a:active, a:visited{
-	text-decoration: none;
+	margin-bottom: 2em;
 }
 
 .jumbotron{
-	height: 100%;
-	width: 100%;
-	margin: 0px;
 	background-color: #542B88;
+	height: 100%;
+	margin-bottom: 0;
 }
 
-.jumbotron h1, p{
-	color: #FEFEFF;
-	font-family: "Lato";
+.jumbotron img{
+	margin: auto;
 }
 
 .jumbotron h1{
-	font-size: 90px;
+	color: #FEFEFE;
+	font-size: 6em;
 	font-weight: 300;
 }
 
-
-.footer{
-	background-color: #542B88;
-	clear: both;
-	padding-bottom: 20px;
+.jumbotron-text{
+	text-align: center;
+	color: #FEFEFF;
+	font-weight: 300;
 }
 
-.footer h2{
-	color: white;
+.img-circle{
+	border: 2px solid white;
 }
 
-.footer a {
+.navbar-right{
+	margin-right: 1.5em;
+}
+
+.myOverlay{
+	height: 100%; 
+	width: 100%; 
+	padding: 2em;
+	position: absolute; 
+	background-color: rgba(84,43,136,0.8); 
+	z-index: 1; 
+	display: none;
+
+	color: #FFFFFF;
+	font-family: "Open Sans";
+	font-weight: 400;
+	font-size: 1.2em;
+}
+
+.myOverlay button{
+	font-size: 1.1em;
+	margin-right: 1em;
+}
+
+.myOverlay p{
+	position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+  -ms-transform: translateY(-60%);;
+  -webkit-transform: translateY(-60%);
+}
+
+.nav.navbar-nav li a {
+    color: white;
+    font-family: "Lato";
+    font-size: 1.3em;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.nav.navbar-nav li a:hover {
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.nav.navbar-nav li a:link{
 	text-decoration: none;
+    color: white;
 }
 
-.footer a p{
-	font-size: 20px;
-	
+.nav.navbar-nav li a:visited {
+	text-decoration: none;
+    color: white;
 }
 
-.footer a p:hover{
-	color: black;
+.navbar.navbar-nav li a:active {
+	text-decoration: none;
+    color: white;
 }
 
-.glyphicon.glyphicon-envelope{
-	font-size: 50px;
-	color: white;
-	margin: 0 auto;
+.navbar{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: none;
 }
 
-.glyphicon.glyphicon-envelope:hover{
-	color: black;
+.about{
+	background-color: #191919;
+	padding-top: 4em;
+	padding-bottom: 3em;
 }
 
-.portfolio-container{
+.about-text{
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 1.4em;
+	font-weight: 300;
+	font-style: "Lato";
+	font-style: bold;
+
+}
+
+.about h2{
+	font-size: 4em;
+	font-weight: 400;
+}
+
+.portfolio{
+	padding-top: 4em;
+	padding-bottom: 3em;
+	background-color: #F6F6F6;
+}
+
+.portfolio h2{
+	text-align: center;
+	font-size: 4em;
+	font-weight: 400;
+
+}
+
+.project-container{
+	border: 1px solid #000066;
+	margin-bottom: 1.5em;
+}
+
+
+.controls-container{
+	background-color: #191919;
+}
+
+.carousel-indicators{
+	display: inline-block;
+	position: relative;
+	top:0px;
+	bottom: 0px;
+	margin-bottom: 0px;
+	z-index: 2;
+	padding: 0px;
 	margin: 0px;
 }
 
-.image{
-	width: 480px;
-	height: 270px;
-	display: block;
+.glyphicon{
+	z-index: 2;
+	font-size: 2.5em;
+	color: white;
+	padding: 0px;
+}
+
+.glyphicon-chevron-right{
+	padding-right: 2em;
+}
+.glyphicon-chevron-left{
+	padding-left: 2em;
+}
+
+
+
+.glyphicon:hover{
 	cursor: pointer;
-	margin: 0 auto;
 }
 
-#quick-convert{
-	background: url(img/quick_convert.png);
-	background-size: 480px 270px;
-}
-#safe-pass{
-	background: url(img/safe_pass.png);
-	background-size: 480px 270px;
+.contact{
+	padding-top: 4em;
+	background-color: #542B88;
 }
 
-#muriqui{
-	background: url(img/muriqui.png);
-	background-size: 480px 270px;
-}
-
-#unlocker{
-	background: url(img/unlocker.png);
-	background-size: 480px 270px;
-
-}
-
-#phantom-vib{
-	background: url(img/phantomvib.png);
-	background-size: 480px 270px;
-}
-
-#last_tx100{
-	background: url(img/final_tx100.png);
-	background-size: 480px 270px;
-}
-
-
-#priorify{
-	background: url(img/priorify.png);
-	background-size: 480px 270px;
-}
-
-#offline_bling{
-	background: url(img/offline_bling.png);
-	background-size: 480px 270px;
-}
-
-.image:hover .description{
-	display:table;
-	
-}
-
-.description-text{
-	vertical-align: middle;
-	display:table-cell;
-}
-
-.description{
-	background-color: black;
-	height: 270px;
-	width: 480px;
-	
-    opacity: 0.75;
-    display: none;
-    padding: 25px;
-    text-align: center;
-}
-
-
-
-.portfolio-container .row{
-	padding: 30px 30px 30px 30px;
-	background: #F6F6F6;
-}
-
-.description p{
-	font-family: 'Lato', "Trebuchet MS", "Verdana";
-	font-size: 16px;
-	font-style: bold;
-	font-weight: 900;
-}
-
-
-
-h4{
-	font-family: 'Lato', "Trebuchet MS", "Verdana";
-	font-weight: 900;
+.contact h2{
 	text-align: center;
-	display: block;
-}
-
-li {
-	font-family: "Lato", "Trebuchet MS", "Verdana";
-	display: inline;
-	font-size: 18px;
+	font-size: 4em;
+	font-weight: 400;
+	color: #FFFFFF;
 
 }
 
-ul {
-	display: inline;
+.contact h3{
+	
+	font-weight: 300;
+
 }
+
+h3{
+	text-align: center;
+}
+
+.contact{
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.contact i{
+	padding: 0.5em;
+}
+
+.contact a{
+	color: white;
+}
+
+.contact a:hover{
+	color: black;
+
+}
+
+
+
+
