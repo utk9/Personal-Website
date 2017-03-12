@@ -217,6 +217,29 @@ h3{
 
 }
 
+.my-image {
+	width: 30%;
+}
+
+@media screen and (max-width: 500px) {
+    .my-image {
+		width: 60%;
+	}
+
+	.jumbotron h1{
+		color: #FEFEFE;
+		font-size: 4em;
+		font-weight: 300;
+	}
+
+	.jumbotron h3{
+	color: #FEFEFE;
+	font-size: 1.5em;
+	font-weight: 300;
+}
+}
+
+
 
 
 
