@@ -1,0 +1,18 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+button {
+	border-radius: 2px;
+    background-color: white;
+    border: 2px solid #542B88;
+    padding: 0.4em 1em;
+    font-size: 1em;
+}
+
+@media (min-width: 600px) {
+    .content {
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+}
