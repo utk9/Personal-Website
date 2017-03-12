@@ -10,6 +10,11 @@ button {
     font-size: 1em;
 }
 
+button:hover {
+	cursor: pointer;
+	background-color: rgba(38,0,250,.3)
+}
+
 @media (min-width: 600px) {
     .content {
         margin-left: 300px;
