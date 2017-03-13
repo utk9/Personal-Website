@@ -9,6 +9,10 @@ html, body {
 }
 
 .about {
+    padding-top: 2em;
+}
+
+.special {
     height: 100%;
     position: relative;
 }
@@ -20,6 +24,16 @@ html, body {
 
 h1{
     font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h6 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 img {
@@ -60,7 +74,7 @@ img {
 
 @media (min-width: 600px) {
     .content {
-        margin-left: 21em;
-        margin-right: 21em;
+        margin-left: 18em;
+        margin-right: 18em;
     }
 }
