@@ -22,7 +22,20 @@ h1{
     font-size: 2.5em;
 }
 
-button {
+img {
+    width: 100%;
+}
+
+.project-img {
+    margin: 5px;
+}
+
+.fa-angle-double-down:hover {
+    color: #7D66FC;
+    cursor: pointer;
+}
+
+.about button {
 	border-radius: 2px;
     background-color: white;
     border: 2px solid rgba(38,0,250,.3);
@@ -31,7 +44,7 @@ button {
     margin: 1px;
 }
 
-button:hover {
+.about button:hover {
 	cursor: pointer;
 	border-color: #7D66FC;
 }
