@@ -1,23 +1,53 @@
-body {
+html, body {
+    height: 100%;
+}
+
+.content {
 	font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    height: 100%;
+}
+
+.about {
+    height: 100%;
+    position: relative;
+}
+
+.go-down {
+    position: absolute;
+    bottom: 60px;
+}
+
+h1{
+    font-size: 2.5em;
 }
 
 button {
 	border-radius: 2px;
     background-color: white;
-    border: 2px solid #542B88;
-    padding: 0.4em 1em;
-    font-size: 1em;
+    border: 2px solid rgba(38,0,250,.3);
+    padding: 0.5em 1.1em;
+    font-size: 0.95em;
+    margin: 1px;
 }
 
 button:hover {
 	cursor: pointer;
-	background-color: rgba(38,0,250,.3)
+	border-color: #7D66FC;
+}
+
+#hi {
+    color: #7D66FC;
+}
+
+.about-me {
+    font-size: 1.07em;
+    line-height: 1.6;
 }
 
 @media (min-width: 600px) {
     .content {
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-left: 21em;
+        margin-right: 21em;
     }
 }
