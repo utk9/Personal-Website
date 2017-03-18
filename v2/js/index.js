@@ -9,7 +9,7 @@ var smoothScroll = function(target) {
     var targetY = 0;
     do { //find the top of target relatively to the container
         if (target == scrollContainer) break;
-        targetY += target.offsetTop;
+        targetY += target.offsetTop - 30;
     } while (target = target.offsetParent);
     
     scroll = function(c, a, b, i) {
