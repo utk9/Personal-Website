@@ -13,13 +13,11 @@ hr {
 .content {
 	font-family: 'Open Sans', sans-serif;
     color: #444444;
-    /*height: 100%;*/
     padding-top: 2em;
-    padding-bottom: 2em;
-}
-
-.about {
-    /*min-height: 100%;*/
+    padding-bottom: 1em;
+    margin-left: 18em;
+    margin-right: 18em;
+    margin: 2em 18em 1em 18em;
 }
 
 .go-down {
@@ -40,10 +38,14 @@ hr {
     height: 1px;
 }
 
+.project .description {
+    margin-right: 30px;
+    width: 400px;
+}
+
 .project a {
     color: #444444;
     text-decoration: none; /* no underline */
-    margin-right: 0.7em;
 }
 
 .project a:hover {
@@ -101,6 +103,7 @@ img:hover {
 }
 
 .project {
+    display:flex;
     margin-bottom: 3em;
 }
 
@@ -136,9 +139,33 @@ img:hover {
     line-height: 1.6em;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 1200px) {
     .content {
-        margin-left: 18em;
-        margin-right: 18em;
+        margin: 2em 7em 1em 7em;
+    }
+}
+
+@media (max-width: 700px) {
+    .content {
+        margin: 0em 1.5em 1em 1.5em;
+    }
+
+    .mobile-center {
+        margin: 0 auto;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project .description {
+        margin-right: 0px;
+        width: 320px;
+    }
+
+    img {
+        width: 320px;
+        height: 160px;
+        margin-top: 1em;
     }
 }
