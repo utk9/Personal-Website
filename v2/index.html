@@ -1,4 +1,4 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,28 +14,26 @@
 <body>
 	<hr>
 	<div class="content">
-		<div class="about">
-			<p class="about-me"><span id="hi">Hello</span>, you've reached</p>
+		<div class="about" id="about">
+			<p class="about-me"><span id="hi">Hello</span>, I'm</p>
 			<h1>Utkarsh Lamba</h1>
 			<p class="about-me"> 
-				I am studying Software Engineering student at the University of Waterloo.
+				I am studying Software Engineering at the University of Waterloo.
 			</p>
 			<p class="about-me">
-				I am experiened with backend development, and passionate about Database and API design, Distributed Systems and Cloud Computing, and Data visualization. I also like to playing sports, love go carting, and like to explore new cities, my favourite still being Toronto, my home town!
+				I am experiened with backend development, and interested in API and Database design, Cloud Computing, and Data visualization. I also like to play sports, love go carting, and like to explore new cities, my favourite being Toronto, my home town!
 			</p>
 			<p class="about-me">
-				I am currently an intern at Polyvore (Yahoo) in Sunnyvale, CA, previously at Vena Solutions in Toronto, ON. Looking for internship opportunities for the upcoming fall.
+				I am currently an intern <a href="https://github.com/polyvore" target="_blank">@Polyvore</a> (Yahoo) in Sunnyvale, CA, previously at <a href="http://venasolutions.com/" target="_blank">Vena Solutions</a> in Toronto, ON. Looking for internship opportunities for the upcoming fall.
 			</p>
-			<button><i class="fa fa-github" aria-hidden="true"></i> Github</button>
-			<button><i class="fa fa-thumb-tack" aria-hidden="true"></i> Devpost</button>
-			<button><i class="fa fa-envelope" aria-hidden="true"></i> Email</button>
-			<button><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</button>
-			<button><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button>
+			<a href="https://github.com/utk9" target="_blank"><button><i class="fa fa-github" aria-hidden="true"></i> Github</button></a>
+			<a href="https://devpost.com/ut" target="_blank"><button><i class="fa fa-thumb-tack" aria-hidden="true"></i> Devpost</button></a>
+			<a href="mailto:ulamba@uwaterloo.ca" target="_blank"><button><i class="fa fa-envelope" aria-hidden="true"></i> Email</button></a>
+			<a href="https://www.linkedin.com/in/ulamba/" target="_blank"><button><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</button></a>
+			<a href="./docs/resume.pdf" target="_blank"><button><i class="fa fa-file-text" aria-hidden="true"></i> Resume</button></a>
 		</div>
 
-		<!--<div class="go-down"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true" onClick="scrollToProjects()"></i></div>-->
-
-		
+		<hr class="separator">
 
 		<div class="projects">
 			<h3>Projects</h3>
@@ -43,6 +41,7 @@
 				<div style="margin-right: 30px; width: 400px;">
 					<h6>WhiteBoard</h6>
 					<p>Web app to collobaratively create diagrams and drawing with other people on a virtual whiteboard in real time.</p>
+					<span>—&nbsp;&nbsp;</span>
 					<a href="https://draw-with-whiteboard.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i><span class="bold-text"> Live</span></a>
 					<a href="https://github.com/utk9/Whiteboard" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> Source</span>
 					</a>
@@ -53,7 +52,8 @@
 			<div class="project" style="display:flex">
 				<div style="margin-right: 30px; width: 400px;">
 					<h6>NoteShare</h6>
-					<p>Webapp to share notes with easy and quick access.</p>
+					<p>Platform for sharing, accesing and searching notes and docs. Built with focus on ease and quickness of use.</p>
+					<span>—&nbsp;&nbsp;</span>
 					<a href="http://danknotes.herokuapp.com/" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i><span class="bold-text"> Live</span></a>
 					<a href="https://github.com/utk9/NoteShare" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> Source</span>
 					</a>
@@ -64,7 +64,8 @@
 			<div class="project" style="display:flex">
 				<div style="margin-right: 30px; width: 400px;">
 					<h6>OfflineBling</h6>
-					<p>Android application that uses SMS to provide services that normally require an internet connection. Features include Wikipedia and WolframAlpha search and a community Q/A forum.</p>
+					<p>Android app that uses SMS to provide services that normally require an internet connection. Features include Wikipedia and WolframAlpha search and a community Q/A forum.</p>
+					<span>—&nbsp;&nbsp;</span>
 					<a href="https://www.youtube.com/watch?v=NVjwlWY4EpM" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i><span class="bold-text"> Video</span></a>
 					<a href="https://github.com/utk9/OfflineBling" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> Source</span>
 				</a>
@@ -75,7 +76,8 @@
 			<div class="project" style="display:flex">
 				<div style="margin-right: 30px; width: 400px;">
 					<h6>AlgoTrainer</h6>
-					<p>Webapp to test stock trading algorithms on any stock and time period.</p>
+					<p>Platform for people to write and run their trading algorithms on stock data of their choice. Provides graphs for users to evaluate their algorithm's performance and compare how it performed on different stocks. </p>
+					<span>—&nbsp;&nbsp;</span>
 					<a href="https://devpost.com/software/algotrainer-bohkxl" target="_blank"><i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="bold-text"> Devpost</span></a>
 					<a href="https://github.com/AlstonLin/AlgoTrader" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> Source</span>
 					</a>
@@ -86,7 +88,8 @@
 			<div class="project" style="display:flex">
 				<div style="margin-right: 30px; width: 400px;">
 					<h6>LastTX100</h6>
-					<p>Video game designed to teach players World Geography. In-gameplay multi-tasking and content testing. Coded in Java.</p>
+					<p>Video game designed to teach players World Geography and practice multitasking skills</p>
+					<span>—&nbsp;&nbsp;</span>
 					<a href="https://drive.google.com/file/d/0BzBKGLRKJxJnWExfR084amxoeFU/view?usp=sharing" target="_blank"><i class="fa fa-download" aria-hidden="true"></i><span class="bold-text"> Installer</span></a>
 					<a href="https://github.com/utk9/LastTX100" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> Source</span>
 					</a>
@@ -97,7 +100,8 @@
 			<div class="project" style="display:flex">
 				<div style="margin-right: 30px; width: 400px;">
 					<h6>SpaceInVRders</h6>
-					<p>Multiplier VR first person shooter game.</p>
+					<p>Realtime multiplier FPS game in VR. Implemented the networking and HUD.</p>
+					<span>—&nbsp;&nbsp;</span>
 					<a href="https://devpost.com/software/space-invrders" target="_blank"><i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="bold-text"> Devpost</span></a>
 					<a href="https://github.com/utk9/PennAppsXIV-Node" target="_blank"><i class="fa fa-github" aria-hidden="true"></i><span> Source</span>
 					</a>
@@ -106,6 +110,24 @@
 			</div>
 
 		</div>
+
+		<hr class="separator">
+
+		<div class="contact">
+			<h3>Contact</h3>
+			<p>Wanna chat? <a href="mailto:ulamba@uwaterloo.ca">Email</a> me or say hello on <a href="https://www.linkedin.com/in/ulamba/" target="_blank">Linkedin</a>. Wanna hire me? Checkout my <a href="./docs/resume.pdf" target="_blank">resume</a>.</p>
+		</div>
+
+		<hr class="separator">
+
+		<div class="footer">
+			<a href="javascript:scrollToTop()">Back up</a>
+			<span class="align-right">
+			<a href="https://github.com/utk9" target="_blank" style="margin-right: 1em">Github</a>
+			<a href="https://www.linkedin.com/in/ulamba/" target="_blank">Linkedin</a>
+			</span>
+		</div>
+
 	</div>
 
 	<script src="./js/index.js"></script>

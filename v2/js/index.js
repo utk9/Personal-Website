@@ -15,13 +15,12 @@ var smoothScroll = function(target) {
     scroll = function(c, a, b, i) {
         i++; if (i > 30) return;
         c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+        setTimeout(function(){ scroll(c, a, b, i); }, 15);
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
 }
 
-var scrollToProjects = function() {
-
-    smoothScroll(document.getElementById('projects'));
+var scrollToTop = function() {
+    smoothScroll(document.getElementById('about'));
 }
