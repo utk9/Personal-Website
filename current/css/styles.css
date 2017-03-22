@@ -13,11 +13,7 @@ hr {
 .content {
 	font-family: 'Open Sans', sans-serif;
     color: #444444;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    margin-left: 18em;
-    margin-right: 18em;
-    margin: 2em 18em 1em 18em;
+    margin: 3em 18em 1em 18em;
 }
 
 .go-down {
@@ -40,7 +36,7 @@ hr {
 
 .project .description {
     margin-right: 30px;
-    width: 400px;
+    flex-grow: 1;
 }
 
 .project a {
