@@ -13,7 +13,7 @@ hr {
 .content {
 	font-family: 'Open Sans', sans-serif;
     color: #444444;
-    margin: 3em 18em 1em 18em;
+    margin: 3em 20% 1em 20%;
 }
 
 .go-down {
@@ -141,7 +141,7 @@ img:hover {
 
 @media (max-width: 1200px) {
     .content {
-        margin: 2em 7em 1em 7em;
+        margin: 2em 5em 1em 5em;
     }
 }
 
