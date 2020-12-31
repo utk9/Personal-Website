@@ -28,7 +28,7 @@ hr {
 .separator {
     border: none;
     background-image: none;
-    margin-top: 3em;
+    margin-top: 2em;
     background-color: #E8E8E8;
     color: #E8E8E8;
     height: 1px;
@@ -57,12 +57,12 @@ hr {
 
 .contact a {
     text-decoration: none;
-    color: #23859D
+    color: #6600cc
 }
 
 .about a {
     text-decoration: none;
-    color: #23859D
+    color: #6600cc;
 }
 
 .align-right {
@@ -126,17 +126,12 @@ img:hover {
 	border-color: #7D66FC;
 }
 
-#hi {
-    color: #6600cc;
-}
-
 .about-me {
-    font-size: 1.07em;
-    line-height: 1.6;
+    line-height: 1.5em;
 }
 
 .projects {
-    line-height: 1.6em;
+    line-height: 1.5em;
 }
 
 @media (max-width: 1200px) {
